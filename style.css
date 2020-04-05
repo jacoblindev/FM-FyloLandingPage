@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* 
+font-family: 'Raleway', sans-serif; 400 | 700
+font-family: 'Open Sans', sans-serif; 400
+*/
+
+:root {
+    --P-Very-Dark-Blue: hsl(243, 87%, 12%);
+    --P-Desaturated-Blue: hsl(238, 22%, 44%);
+    --A-Bright-Blue: hsl(224, 93%, 58%);
+    --A-Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
