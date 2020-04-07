@@ -315,7 +315,7 @@ footer {
         height: 10vh;
     }
 
-    header h1 {
+    header .logo {
         width: 25%;
     }
 
