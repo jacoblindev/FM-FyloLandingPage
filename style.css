@@ -30,7 +30,7 @@ font-family: 'Open Sans', sans-serif; 400
 }
 
 /* Header Section */
-header {
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -312,4 +312,159 @@ footer {
     text-decoration: none;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 420px) {
+    /* Header Section */
+    header .container {
+        height: 10vh;
+    }
+
+    header h1 {
+        width: 25%;
+    }
+
+    header h1 img {
+        width: 100%;
+    }
+
+    header ul li a {
+        margin-left: 2.5em;
+        font-size: .8rem;
+    }
+
+    /* Hero Section */
+    #hero .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5em;    /* Check later?! */
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        margin: 2em 0;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding-right: 0;
+        margin: 2em 0;
+    }
+
+    #hero form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero input {
+        width: 100%;
+    }
+
+    #hero button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    /* Demo Section */
+    #demo {
+        padding: 2em 0;
+    }
+
+    #demo .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #demo h2 {
+        font-size: 1.2rem;
+    }
+
+    #demo button {
+        margin: 0 auto;
+    }
+
+    #demo .card {
+        padding: 1.5em;
+        margin: 3em auto;
+        width: 80%;
+        text-align: left;
+    }
+
+    #demo .card p {
+        padding: 0;
+        font-size: .65rem;
+        line-height: 1.2rem;
+    }
+
+    /* SignUp Section */
+    #sign-up {
+        padding: 3em 0;
+        text-align: center;
+    }
+
+    #sign-up .container {
+        flex-direction: column;
+    }
+
+    #sign-up .right {
+        width: 100%;
+    }
+
+    #sign-up p {
+        padding-right: 1em;
+        padding-left: 1em;
+
+    }
+
+    #sign-up input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sign-up input::placeholder {
+        color: var(--Light-Gray);
+    }
+
+    #sign-up button {
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    /* Contact Section */
+    #contact .container {
+        width: 80%;
+        padding: 5em 0 3em;
+    }
+
+    #contact .links {
+        flex-direction: column;
+    }
+
+    .links ul {
+        margin: 1em 0;
+    }
+
+
+    .links #social {
+        display: flex;
+        margin: 1em auto 0;
+    }
+
+    .attribution { 
+        margin: 0 3em;
+    }
 }
