@@ -23,6 +23,94 @@ font-family: 'Open Sans', sans-serif; 400
     box-sizing: border-box;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vw;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li a {
+    margin-left: 3.6em;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: var(--P-Very-Dark-Blue);
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    color: var(--A-Bright-Blue);
+}
+
+/* Hero Section */
+#hero .container{
+    color: var(--P-Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12em;    /* Check later?! */
+}
+
+#hero .left {
+    width: 50%;
+}
+
+#hero .right {
+    width: 48%;
+}
+
+#hero .right img {
+    width: 100%;
+}
+
+#hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: var(--P-Desaturated-Blue);
+    margin-bottom: 1.2rem;
+}
+
+#hero input {
+    width: 50%;
+    height: 3em;
+    border: 1px solid var(--P-Very-Dark-Blue);
+    border-radius: 3px;
+    padding-left: 1em;
+    font-size: 1rem;
+}
+
+#hero input::placeholder {
+    color: var(--Light-Gray);
+}
+
+#hero button {
+    width: 30%;
+    height: 3em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: var(--A-Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    margin-left: 1em;
+}
+
 
 .attribution { 
     font-size: 12px; 
