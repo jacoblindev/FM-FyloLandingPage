@@ -135,24 +135,19 @@ p {
     justify-content: space-between;
 }
 
-#demo button {
-    /* width: 30%; */
-    border: none;
+#demo a {
     border-bottom: 1px solid var(--A-Moderate-Cyan);
     background-color: var(--Light-Grayish-Blue);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: .4em 0;
-    cursor: pointer;
-}
-
-#demo button a {
+    padding: .3em 0;
     color: var(--A-Moderate-Cyan);
     text-decoration: none;
     font-size: 1.1rem;
     letter-spacing: .03em;
-    margin-right: .5em;
+}
+
+#demo a img {
+    vertical-align: middle;
+    margin-left: .5em;
 }
 
 #demo .card {
@@ -393,7 +388,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    #demo button {
+    #demo a {
         margin: 0 auto;
     }
 
