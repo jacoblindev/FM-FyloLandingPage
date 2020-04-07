@@ -10,7 +10,7 @@ font-family: 'Open Sans', sans-serif; 400
     --P-Desaturated-Blue: hsl(238, 22%, 44%);
     --A-Bright-Blue: hsl(224, 93%, 58%);
     --A-Moderate-Cyan: hsl(170, 45%, 43%);
-    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Grayish-Blue: #F8F8FE;
     --Light-Gray: hsl(0, 0%, 75%);
 
     font-family: 'Open Sans', sans-serif;
@@ -26,6 +26,7 @@ font-family: 'Open Sans', sans-serif; 400
 .container {
     width: 90%;
     margin: 0 auto;
+    color: var(--P-Very-Dark-Blue);
 }
 
 /* Header Section */
@@ -55,33 +56,32 @@ header ul li a:hover {
 
 /* Hero Section */
 #hero .container{
-    color: var(--P-Very-Dark-Blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 12em;    /* Check later?! */
 }
 
-#hero .left {
+.left {
     width: 50%;
 }
 
-#hero .right {
+.right {
     width: 48%;
 }
 
-#hero .right img {
+.right img {
     width: 100%;
 }
 
-#hero h2 {
+h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 1.5em;
     margin-bottom: 1rem;
 }
 
-#hero p {
+p {
     font-size: 1.2rem;
     color: var(--P-Desaturated-Blue);
     margin-bottom: 1.2rem;
@@ -109,6 +109,27 @@ header ul li a:hover {
     background-color: var(--A-Bright-Blue);
     color: var(--Light-Grayish-Blue);
     margin-left: 1em;
+    cursor: pointer;
+}
+
+/* Demo Section */
+.bg-curve {
+    width: 100%;
+}
+
+.bg-curve img {
+    width:100%;
+    vertical-align: bottom;
+}
+
+#demo {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+#demo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
